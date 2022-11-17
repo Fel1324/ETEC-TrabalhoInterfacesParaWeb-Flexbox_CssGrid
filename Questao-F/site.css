@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gradient: linear-gradient(90deg, rgb(0, 0, 0), rgb(94, 208, 243));
+
+
+    font-size: 62.5% /*1 REM = 10px*/;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: rgb(0, 195, 255);
+}
+
+img{
+    width: 15%;
+}
+
+.header{
+    background: var(--gradient);
+
+    padding-block: 3rem;
+    padding-inline: 2rem;
+    
+    width: 100%;
+}
+
+.header h1{
+    font-size: 4rem;
+
+    margin-bottom: 2rem;
+}
+
+.header h1, .header p{
+    color: rgb(255,255,255);
+    
+    text-align: center;
+}
+
+.header p{
+    font-size: 2rem;
+}
+
+.main{    
+    text-align: center;
+
+    padding: 4rem;
+}
+
+.main__maintitle{
+    font-size: 5rem;
+    font-weight: 700;
+
+    border-bottom: 2px solid rgb(0, 195, 255);
+}
+
+.main__title{
+    font-size: 3rem;
+
+    margin-block: 2rem;
+}
+
+.main__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    margin-bottom: 8rem;
+}
+
+.main__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.footer{
+    background: var(--gradient);
+
+    width: 100%;
+    
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+
+.footer h2, .footer p{
+    color: rgb(255, 255, 255);
+}
+
+.footer h2{
+    font-size: 3rem;
+
+    margin-bottom: 2rem;
+}
+
+.footer p{
+    font-size: 1.6rem;
+}

@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gradient: linear-gradient(90deg, rgb(255, 0, 0), rgb(229, 255, 0));
+
+
+    font-size: 62.5% /*1 REM = 10px*/;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: rgb(255, 72, 0);
+}
+
+hr{
+    background-color: rgb(255, 72, 0);
+
+    height: .4rem;
+
+    margin-block: 4rem;
+}
+
+.header{
+    background: var(--gradient);
+
+    padding-block: 3rem;
+    padding-inline: 2rem;
+    
+    width: 100%;
+}
+
+.header h1{
+    font-size: 4rem;
+
+    margin-bottom: 2rem;
+}
+
+.header h1, .header p{
+    color: rgb(255,255,255);
+    
+    text-align: center;
+}
+
+.header p{
+    font-size: 2rem;
+}
+
+.main{    
+    text-align: center;
+
+    padding: 4rem;
+}
+
+.main__title{
+    font-size: 4rem;
+
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+.main__column{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem;
+}
+
+.main__img--column{
+    width: 100%;
+}
+
+.main__row{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    gap: 4rem;
+}
+
+.main__img--row{
+    width: 20%;
+}
+
+.footer{
+    background: var(--gradient);
+
+    width: 100%;
+    
+    padding-block: 3rem;
+    padding-inline: 2rem;
+}
+
+.footer h2, .footer p{
+    color: rgb(255, 255, 255);
+}
+
+.footer h2{
+    font-size: 3rem;
+
+    margin-bottom: 2rem;
+}
+
+.footer p{
+    font-size: 1.6rem;
+}

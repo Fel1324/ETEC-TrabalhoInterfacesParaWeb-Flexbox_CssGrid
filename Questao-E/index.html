@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EpicAnimes - "Questão E"</title>
+        <link rel="stylesheet" href="site.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--E. Desenvolver uma página com layout responsivo usando CSS Grid.-->
+
+        <header class="header">
+            <div class="header__information">
+                <h2 class="header__title">Questão E</h1>
+                <p class="header__paragraph">Desenvolver uma página com layout responsivo usando CSS Grid.</p>
+            </div>
+
+            <hr>
+
+            <div class="header__content">
+                <button onclick="openMenu()" class="header__button--menu" aria-label="Abrir Menu"><img src="img/open-menu.png" alt></button>
+
+                <img class="header__logo" src="img/logo.png" alt="Logo da Epic Animes">
+                <input class="header__search" type="search" placeholder="Pesquisar Anime">
+                <input class="header__search--desktop" type="search" placeholder="Pesquisar Anime">
+                <button onclick="openSearch()" class="header__button--search" aria-label="Pesquisar Anime"><img src="img/search.png" alt></button>
+                <button onclick="closeSearch()" class="search-close" aria-label="Fechar Menu"><img src="img/close-menu.png" alt></button>
+
+                <nav class="header__nav">
+                    <ul class="header__lista">
+                        <li class="header__item"><a href="#" class="header__link">Home</a></li>
+                        <li class="header__item"><a href="#" class="header__link header__link--active">Lista de Animes</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Favoritos</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Mangás</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Genêros</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <aside class="menu">
+            <div class="menu__header">
+                <img src="img/logo.png" alt="Logo da Epic Animes">
+                <button onclick="closeMenu()" class="menu__button" aria-label="Fechar Menu"><img src="img/close-menu.png" alt></button>
+            </div>
+
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Lista de Animes</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Favoritos</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Mangás</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Genêros</a></li>
+            </ul>
+        </aside>
+
+        <main class="main">
+            <section class="main__animelist">
+                <h1 class="main__title">Lista de animes</h1>
+
+                <div class="animelist__header">
+                    <ul class="animelist__lista">
+                        <li class="animelist__item"><a href="#" class="animelist__link">all</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">a</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">b</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">c</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">d</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">e</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">f</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">g</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">h</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">i</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">j</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">k</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">l</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">m</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">n</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">o</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">p</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">q</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">r</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">s</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">t</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">u</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">v</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">w</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">x</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">y</a></li>
+                        <li class="animelist__item"><a href="#" class="animelist__link">z</a></li>
+                    </ul>
+                </div>
+
+                <div class="animelist__content">
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim1.png" alt="Naruto Shippuden">
+                            <h4 class="animelist__info">Legendado</h4>
+                            <h2 class="animelist__title">Naruto Shippuden</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim2.png" alt="Dragon Ball Z">
+                            <h4 class="animelist__info">Dublado</h4>
+                            <h2 class="animelist__title">Dragon Ball Z</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim3.png" alt="Bleach">
+                            <h4 class="animelist__info">Legendado</h4>
+                            <h2 class="animelist__title">Bleach</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim4.png" alt="Kimetsu No Yaiba">
+                            <h4 class="animelist__info">Legendado</h4>
+                            <h2 class="animelist__title">Kimetsu No Yaiba</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim5.png" alt="Death Note">
+                            <h4 class="animelist__info">Dublado</h4>
+                            <h2 class="animelist__title">Death Note</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim6.png" alt="Fullmetal Alchemist: Brotherhood">
+                            <h4 class="animelist__info">Legendado</h4>
+                            <h2 class="animelist__title">Fullmetal Alchemist: Brotherhood</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim7.png" alt="Tokyo Ghoul">
+                            <h4 class="animelist__info">Legendado</h4>
+                            <h2 class="animelist__title">Tokyo Ghoul</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim8.png" alt="Tokyo Revengers">
+                            <h4 class="animelist__info">Legendado</h4>
+                            <h2 class="animelist__title">Tokyo Revengers</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim9.png" alt="Fumetsu No Anata E">
+                            <h4 class="animelist__info">Legendado</h4>
+                            <h2 class="animelist__title">Fumetsu No Anata E</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim10.png" alt="Pokemon">
+                            <h4 class="animelist__info">Dublado</h4>
+                            <h2 class="animelist__title">Pokémon</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim11.png" alt="Castlevania">
+                            <h4 class="animelist__info">Dublado</h4>
+                            <h2 class="animelist__title">Castlevania</h2>
+                        </a>
+                    </div>
+
+                    <div class="animelist__anime">
+                        <a class="animelist__animelink" href="#">
+                            <img class="animelist__img" src="img/anim12.png" alt="Shingeki no Kyojin">
+                            <h4 class="animelist__info">Legendado</h4>
+                            <h2 class="animelist__title">Shingeki no Kyojin</h2>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__paragraph">Copyright (c) 2022 EpicAnimes</p>
+            <p class="footer__paragraph">Todos os direitos reservados</p>
+
+            <hr>
+
+            <h2>Membros do grupo</h2> 
+            <p>José Francisco</p>
+            <p>Matheus Nunes</p>
+            <p>Rafael Oliveira</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

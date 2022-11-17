@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão - I</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--I.	Explicar o uso dos comandos grid-template-areas do CSS Grid, com exemplos.-->
+
+    <header class="header">
+        <div class="header__info">
+            <h2>Questão I - Exemplo</h1>
+            <p>"Explicar o uso dos comandos grid-template-areas do CSS Grid, com exemplos."</p>
+        </div>
+
+        <hr>
+
+        <div class="header__content">
+            <h1 class="header__title">JMR Store</h1>
+
+            <nav class="header__navigation">
+                <ul class="header__lista">
+                    <li class="header__item"><a href="#" class="header__link header__link--active">Home</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Apps</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Games</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Fazer Login</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="main__wrapper">
+            <section class="main__games">
+                <h2 class="main__title">Games Populares</h2>
+                <a class="main__link" href="#">#Visualizar todos</a>
+
+                <div class="games__container">
+                    <div class="games__content grid-1">
+                        <img src="img/lol.jpg" alt="League of Legends" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">League of Legends</h3></a>
+                    </div>
+
+                    <div class="games__content grid-2">
+                        <img src="img/gta-v.jpg" alt="GTA 5" class="main__img">
+                        <a href="#"><h3 class="main__name">GTA V</h3></a>
+                    </div>
+
+                    <div class="games__content grid-3">
+                        <img src="img/cs-go.jpg" alt="Counter Strike: Global Offensive" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">CS:GO</h3></a>
+                    </div>
+
+                    <div class="games__content grid-4">
+                        <img src="img/mario-kart.jpg" alt="Mario Kart" class="main__img">
+                        <a href="#"><h3 class="main__name">Mario Kart</h3></a>
+                    </div>
+
+                    <div class="games__content grid-5">
+                        <img src="img/brawl-stars.jpg" alt="Brawl Stars" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Brawl Stars</h3></a>
+                    </div>
+
+                    <div class="games__content grid-6">
+                        <img src="img/mine.jpg" alt="Minecraft" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Minecraft</h3></a>
+                    </div>
+
+                    <div class="games__content grid-7">
+                        <img src="img/pubg.jpg" alt="PlayerUnknown's Battlegrounds" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">pubg</h3></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__apps">
+                <h2 class="main__title">Apps Populares</h2>
+                <a class="main__link" href="#">#Visualizar todos</a>
+
+                <div class="apps__container">
+                    <div class="apps__content grid-1">
+                        <img src="img/organizze.jpeg" alt="Organizze" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Organizze</h3></a>
+                    </div>
+                    
+                    <div class="apps__content grid-2">
+                        <img src="img/onefotball.jpeg" alt="Onefotball" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Onefotball</h3></a>
+                    </div>
+
+                    <div class="apps__content grid-3">
+                        <img src="img/skype.png" alt="Skype" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Skype</h3></a>
+                    </div>
+
+                    <div class="apps__content grid-4">
+                        <img src="img/telegram.jpeg" alt="Telegram" class="main__img">
+                        <a href="#"><h3 class="main__name">Telegram</h3></a>
+                    </div>
+
+                    <div class="apps__content grid-5">
+                        <img src="img/whatsapp.png" alt="Whatsapp" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Whatsapp</h3></a>
+                    </div>
+
+                    <div class="apps__content grid-6">
+                        <img src="img/slack.png" alt="Slack" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Slack</h3></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__lancamentos">
+                <h2 class="main__title">Lançamentos</h2>
+                <a class="main__link" href="#">#Visualizar todos</a>
+
+                <div class="lancamentos__container">
+                    <div class="lancamentos__content grid-1">
+                        <img src="img/mine.jpg" alt="Minecraft" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Minecraft</h3></a>
+                    </div>
+                    
+                    <div class="lancamentos__content grid-2">
+                        <img src="img/gta-v.jpg" alt="GTA 5" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">GTA V</h3></a>
+                    </div>
+
+                    <div class="lancamentos__content grid-3">
+                        <img src="img/gow.jpg" alt="God Of War: Ragnarök" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">God Of War: Ragnarök</h3></a>
+                    </div>
+
+                    <div class="lancamentos__content grid-4">
+                        <img src="img/fortnite.jpg" alt="Fortnite" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Fortnite</h3></a>
+                    </div>
+
+                    <div class="lancamentos__content grid-5">
+                        <img src="img/whatsapp.png" alt="Whatsapp" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Whatsapp</h3></a>
+                    </div>
+
+                    <div class="lancamentos__content grid-6">
+                        <img src="img/onefotball.jpeg" alt="Onefotball" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Onefotball</h3></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__destaques">
+                <h2 class="main__title">Destaques</h2>
+                <a class="main__link" href="#">#Visualizar todos</a>
+
+                <div class="destaques__container">
+                    <div class="destaques__content grid-1">
+                        <img src="img/pubg.jpg" alt="PlayerUnknown's Battlegrounds" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">pubg</h3></a>
+                    </div>
+                    
+                    <div class="destaques__content grid-2">
+                        <img src="img/gta-v.jpg" alt="GTA 5" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">GTA V</h3></a>
+                    </div>
+
+                    <div class="destaques__content grid-3">
+                        <img src="img/whatsapp.png" alt="Whatsapp" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Whatsapp</h3></a>
+                    </div>
+
+                    <div class="destaques__content grid-4">
+                        <img src="img/gow.jpg" alt="God Of War: Ragnarök" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">God Of War: Ragnarök</h3></a>
+                    </div>
+
+                    <div class="destaques__content grid-5">
+                        <img src="img/fortnite.jpg" alt="Fortnite" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">Fortnite</h3></a>
+                    </div>
+
+                    <div class="destaques__content grid-6">
+                        <img src="img/cs-go.jpg" alt="Counter Strike: Global Offensive" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">CS:GO</h3></a>
+                    </div>
+
+                    <div class="destaques__content grid-7">
+                        <img src="img/lol.jpg" alt="League of Legends" class="main__img" lang="en">
+                        <a href="#"><h3 class="main__name">League of Legends</h3></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__paragraph">Copyright (c) 2022 JMR Store</p>
+        <p class="footer__paragraph">Todos os direitos reservados</p>
+
+        <hr>
+
+        <h2>Membros do grupo</h2> 
+        <p>José Francisco</p>
+        <p>Matheus Nunes</p>
+        <p>Rafael Oliveira</p>
+    </footer>
+</body>
+</html>

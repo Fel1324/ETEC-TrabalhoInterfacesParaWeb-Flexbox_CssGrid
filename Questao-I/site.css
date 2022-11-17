@@ -1,0 +1,451 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    list-style-type: none;
+}
+
+:root{
+    --second-color: rgb(32, 32, 32);
+    --default-color: rgb(255, 255, 255);
+    --primary-color: rgb(245, 183, 26);
+    --gradient-title: linear-gradient(to top, var(--primary-color), var(--default-color));
+    --background-color: rgb(75, 75, 75);
+
+    --text-color: rgb(4, 51, 109);
+
+    --primary-font: 'Roboto', sans-serif;
+    --titles-font: 'Open sans', sans-serif;
+
+    font-size: 62.5% /*1 REM = 10px*/;
+}
+
+html, body{
+    background-color: var(--background-color);
+
+    width: 100%;
+    height: 100%;
+
+    font-family: var(--primary-font);
+
+    font-size: 1.6rem;
+}   
+
+hr{
+    background-color: var(--primary-color);
+    height: .2rem;
+    margin-block: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--primary-color);
+    
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+p{
+    color: var(--primary-color);
+
+    line-height: 1.5;
+}
+
+a{
+    color: var(--primary-color);
+
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header{
+    background-color: var(--second-color);
+    
+    padding: 2rem;
+
+    width: 100%;
+}
+
+.header__info{
+    text-align: center;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 85%;
+    margin-inline: auto;
+}
+
+.header__title{
+    font-size: 4rem;
+
+    background-image: var(--gradient-title);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+.header__lista{
+    display: flex;
+    gap: 4rem;
+}
+
+.header__link:hover{
+    color: var(--default-color);
+    border-top: .2rem solid var(--default-color);
+
+    transition: all 200ms;
+}
+
+.header__link--active{
+    color: var(--default-color);
+    border-top: .2rem solid var(--default-color);
+}
+
+.main__wrapper{
+    width: 80%;
+    margin: 4rem auto;
+}
+
+.main__title{
+    border-bottom: .2rem dashed var(--primary-color);
+
+    width: fit-content;
+
+    margin-inline: auto;
+    margin-bottom: 4rem;
+
+    font-size: 4rem;
+}
+
+.main__link:hover{
+    text-decoration: underline;
+}
+
+.games__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'game1 game1 game1 game2'
+    'game1 game1 game1 game3'
+    'game4 game5 game6 game7';
+    column-gap: 2rem;
+    row-gap: 6rem;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.games__container .grid-1{
+    grid-area: game1;
+}
+
+.games__container .grid-2{
+    grid-area: game2;
+}
+
+.games__container .grid-3{
+    grid-area: game3;
+}
+
+.games__container .grid-4{
+    grid-area: game4;
+}
+
+.games__container .grid-5{
+    grid-area: game5;
+}
+
+.games__container .grid-6{
+    grid-area: game6;
+}
+
+.games__container .grid-7{
+    grid-area: game7;
+}
+
+.main__img{
+    vertical-align: top;
+
+    width: 100%;
+    height: 100%;
+}
+
+.main__name{
+    background-color: var(--second-color);
+
+    padding: 1rem;
+
+    text-transform: uppercase;
+}
+
+.main__name:hover{
+    color: var(--default-color);
+
+    cursor: pointer;
+
+    transition: all 200ms;
+}
+
+.main__apps{
+    padding-top: 8rem;
+}
+
+.apps__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'app1 app2 app3'
+    'app4 app5 app5'
+    'app6 app5 app5';
+    column-gap: 2rem;
+    row-gap: 6rem;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.apps__container .grid-1{
+    grid-area: app1;
+}
+
+.apps__container .grid-2{
+    grid-area: app2;
+}
+
+.apps__container .grid-3{
+    grid-area: app3;
+}
+
+.apps__container .grid-4{
+    grid-area: app4;
+}
+
+.apps__container .grid-5{
+    grid-area: app5;
+}
+
+.apps__container .grid-6{
+    grid-area: app6;
+}
+
+.main__lancamentos{
+    padding-top: 8rem;
+}
+
+.lancamentos__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'lanc1 lanc4 lanc3'
+    'lanc2 lanc2 lanc5'
+    'lanc2 lanc2 lanc6';
+    column-gap: 2rem;
+    row-gap: 6rem;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.lancamentos__container .grid-1{
+    grid-area: lanc1;
+}
+
+.lancamentos__container .grid-2{
+    grid-area: lanc2;
+}
+
+.lancamentos__container .grid-3{
+    grid-area: lanc3;
+}
+
+.lancamentos__container .grid-4{
+    grid-area: lanc4;
+}
+
+.lancamentos__container .grid-5{
+    grid-area: lanc5;
+}
+
+.lancamentos__container .grid-6{
+    grid-area: lanc6;
+}
+
+.main__destaques{
+    padding-block: 8rem;
+}
+
+.destaques__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'destq1 destq1 destq2 destq2'
+    'destq1 destq1 destq2 destq2'
+    'destq3 destq4 destq4 destq5'
+    'destq6 destq4 destq4 destq7';
+    column-gap: 2rem;
+    row-gap: 6rem;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.destaques__container .grid-1{
+    grid-area: destq1;
+}
+
+.destaques__container .grid-2{
+    grid-area: destq2;
+}
+
+.destaques__container .grid-3{
+    grid-area: destq3;
+}
+
+.destaques__container .grid-4{
+    grid-area: destq4;
+}
+
+.destaques__container .grid-5{
+    grid-area: destq5;
+}
+
+.destaques__container .grid-6{
+    grid-area: destq6;
+}
+
+.destaques__container .grid-6{
+    grid-area: destq6;
+}
+
+.footer{
+    background: var(--second-color);
+
+    text-align: center;
+
+    padding-block: 3rem;
+    padding-inline: 2rem;
+
+    width: 100%;
+}
+
+.footer__paragraph, .footer p{
+    color: var(--primary-color);
+}
+
+.footer h2{
+    color: var(--primary-color);
+
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 970px) {
+    .games__container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        'game1 game1 game2'
+        'game1 game1 game3'
+        'game4 game5 game6'
+        'game7 . .';
+    }
+
+    .lancamentos__container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        'lanc1 lanc2'
+        'lanc3 lanc6'
+        'lanc5 lanc4';
+    }
+
+    .destaques__container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        'destq4 destq4'
+        'destq4 destq4'
+        'destq2 destq3'
+        'destq1 destq5'
+        'destq6 destq7';
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header__content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .games__container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'game1'
+        'game2'
+        'game3'
+        'game4'
+        'game5'
+        'game6'
+        'game7';
+        row-gap: 10rem;
+    }
+
+    
+    .apps__container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'app1'
+        'app2'
+        'app3'
+        'app4'
+        'app5'
+        'app6';
+        row-gap: 10rem;
+    }
+
+    .lancamentos__container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'lanc1'
+        'lanc2'
+        'lanc3'
+        'lanc4'
+        'lanc5'
+        'lanc6';
+        row-gap: 10rem;
+    }
+
+    .destaques__container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'destq1'
+        'destq2'
+        'destq3'
+        'destq4'
+        'destq5'
+        'destq6'
+        'destq7';
+        row-gap: 10rem;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .header__lista{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .header__link{
+        border: 0;
+    }
+    
+    .main__title{
+        font-size: 3rem;
+    }
+}
