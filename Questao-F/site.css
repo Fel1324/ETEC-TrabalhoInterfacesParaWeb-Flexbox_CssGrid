@@ -76,6 +76,7 @@ img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 4rem;
 
     margin-bottom: 8rem;

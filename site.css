@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: rgb(60, 74, 87);
+    --secondary-text-color: rgb(255, 255, 255);
+    --primary-background-color: rgb(255, 255, 255);
+    --secondary-background-color: rgb(176, 2, 1);
+    --list-item-background-color: rgb(142, 173, 202);
+
+    --font: 'Roboto', sans-serif;
+}
+
+html, body{
+    background-color: var(--primary-background-color);
+
+    width: 100%;
+    height: 100%;
+
+    font-family: var(--font);
+    font-size: 1rem;
+}
+
+.header{
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    
+    padding: 1rem;
+}
+
+.main{
+    background-color: inherit;
+    color: var(--primary-text-color);
+
+    text-align: center;
+
+    width: min(375px, 100%);
+    margin-inline: auto;
+
+    padding-block: 4rem;
+    padding-inline: 1rem;
+}
+
+.main__lista-acesso{
+    display: grid;
+    row-gap: 4rem;
+
+    list-style: none;
+}
+
+.main__item-acesso{
+    background-color: var(--list-item-background-color);
+    border-radius: 1.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+
+    width: 80%;
+    height: 200px;
+    margin-inline: auto;
+}
+
+.main__link-acesso{
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.main__link-acesso:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .main{
+        width: min(800px, 100%);
+    }
+
+    .main__lista-acesso{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__item-acesso{
+        height: 250px;
+    }
+
+    .main__title-acesso{
+        font-size: 2.4rem;
+    }
+
+    .main__link-acesso{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main{
+        width: min(1050px, 100%);
+    }
+
+    .main__lista-acesso{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main{
+        width: min(1500px, 100%);
+    }
+
+    .main__lista-acesso{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
