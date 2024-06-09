@@ -46,6 +46,8 @@ Clique [aqui](https://fel1324.github.io/ETEC-TrabalhoInterfacesParaWeb-Flexbox_C
 * Javascript
 * Git e Github
 
+<br>
+
 <h2 id="status">⌛ Status dos projetos</h2>
 
 ✔️ Todos os projetos do trabalho estão finalizados 🙌
